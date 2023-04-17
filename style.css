@@ -1,0 +1,104 @@
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+body {
+  background: #1B1A1B;
+}
+
+.progress-bar {
+  display: block;
+  width: 900px;
+  height: 25px;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.progress {
+  display: block;
+  width: 90%;
+  height: 100%;
+  background-color: green;
+  animation: progressBar 3s linear;
+}
+
+@keyframes progressBar {
+  0% { 
+    width: 0; 
+  }
+  100% {
+    width: 90%; 
+  }
+}
+
+.rectangle {
+  display: block;
+  height: 25px;
+  background-color: aqua;
+  margin-bottom: 50px;
+  animation: timing 3s paused infinite alternate;
+}
+
+.rectangle:hover {
+  animation-play-state: running;
+}
+
+@keyframes timing {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 100%; 
+  }
+}
+
+.anim {
+  display: block;
+  width: 320px;
+  height: 320px;
+  border: 2px solid white;
+  background: white;
+}
+
+.ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background: red;
+  animation: ball 5s linear infinite;
+}
+
+@keyframes ball {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(40px, 150px);
+  }
+  40% {
+    transform: translate(80px, 300px);
+  }
+  50% {
+    transform: translate(120px,200px);
+  }
+  60% {
+    transform: translate(170px,300px);
+  }
+  70% {
+    transform: translate(200px,240px);
+  }
+  80% {
+    transform: translate(240px,300px);
+  }
+  90% {
+    transform: translate(270px,270px);
+  }
+  100% {
+    transform: translate(300px, 300px);
+  }
+}
